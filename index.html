@@ -30,9 +30,15 @@
                         'bg-all2': '#EFDA6E',
                         'bg-all3': '#A4DAC3',
                         'bg-all4': '#77AAEA',
+                        'input': '#E9E9E9',
+                        'input-text': '#A0A0A0',
+                        'footer':'#737373'
                     },
                     manrope: {
                         'family': "Manrope",
+                    },
+                    backgroundImages: {
+                        background: "url('./assets/bg.jpg')"
                     }
                 }
             }
@@ -96,7 +102,7 @@
                     <i class="fa-solid fa-bars text-2xl"></i>
                 </div>
                 <ul tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
                     <li><a>Home</a></li>
                     <li><a>Services</a></li>
                     <li><a>Portfolio</a></li>
@@ -132,7 +138,7 @@
     </header>
     <!-- ========= main section part start ============== -->
     <main>
-        <section class="bg-gray-300">
+        <section class="bg-gray-300 pb-32">
             <div class="container mx-auto relative">
                 <div class="absolute left-[85px] top-[65px] invisible lg:visible">
                     <img src="./assets/Vector.png" alt="">
@@ -204,7 +210,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-5 justify-items-center items-center p-6">
+                    <div
+                        class="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-5 justify-items-center items-center p-6">
                         <div class=" flex flex-col justify-end w-[275px] bg-bg-all p-6 space-y-3 rounded-xl">
                             <img class="w-[48px] h-[48px]" src="./assets/concept.png" alt="">
                             <h2 class="text-text-color font-bold text-xl">Concept</h2>
@@ -234,9 +241,60 @@
                 </div>
             </div>
         </section>
+        <!-- ============ input part start ============= -->
+        <section class="bg-gray-400">
+            <div class="container mx-auto">
+                <div class="text-center space-y-6 pt-24 lg:w-[970px] mx-auto pb-32">
+                    <button class="btn bg-view_btn rounded-full hover:bg-orange-600 text-xl font-bold ">
+                        Let’s Connect
+                        <div class="text-xl">
+                            <i
+                                class="fa-solid fa-arrow-right p-2 bg-bg-color text-white -rotate-45 flex justify-center items-center rounded-full w-[32px] h-[32px]"></i>
+                        </div>
+                    </button>
+                    <h2 class="text-5xl font-bold text-text-color text-center">Let’s Discuss Next Project</h2>
+                    <p class=" font-medium text-xl text-p-color text-center">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal accents.
+                    </p>
+                    <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                        <label class="input rounded-full text-input-text bg-white shadow-xl flex items-center gap-2">
+                            First Name*
+                            <input type="text" class="grow" />
+                        </label>
+                        <label class="input rounded-full text-input-text bg-white shadow-xl flex items-center gap-2">
+                            Last Name*
+                            <input type="text" class="grow" />
+                        </label>
+                        <label
+                            class="input rounded-full text-input-text bg-white shadow-xl bg-input flex items-center gap-2">
+                            Phone Number*
+                            <input type="text" class="grow" />
+                        </label>
+                        <label class="input text-input-text rounded-full bg-white shadow-xl flex items-center gap-2">
+                            Email Number*
+                            <input type="text" class="grow" />
+                        </label>
+                    </div>
+                    <div>
+                        <textarea placeholder="Write your message here"
+                            class="textarea rounded-3xl textarea-lg w-full h-56 text-text-input">
+                            Write your message here
+                        </textarea>
+                        <button class="btn bg-view_btn rounded-full hover:bg-orange-600 mt-8 text-xl font-bold lg:w-[970px]">
+                            Send Mail
+                            <div class="text-xl">
+                                <i
+                                    class="fa-solid fa-arrow-right p-2 bg-black text-white -rotate-45 flex justify-center items-center rounded-full h-[32px]"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- ========= footer section part start ============== -->
-    <footer></footer>
+  
 
 </body>
 
