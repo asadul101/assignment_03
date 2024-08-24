@@ -34,11 +34,11 @@
                         'input-text': '#A0A0A0',
                         'footer': '#737373'
                     },
-                    manrope: {
-                        'family': "Manrope",
+                    FontFamily: {
+                        family: "Manrope",
                     },
-                    backgroundImages: {
-                        bannerBg: "url('./assets/bg.jpg')",
+                    backgroundImage: {
+                        bannerBg: "url('./assets/all.png')",
                     }
                 }
             }
@@ -148,7 +148,7 @@
                         <div class="hero-content flex flex-col lg:flex-row-reverse flex-col-reverse gap-y-6">
                             <img src="./assets/Rectangle.png" alt="">
                             <div class="flex flex-col justify-center items-center">
-                                <div class="space-y-4">
+                                <div class="space-y-4 mb-3">
                                     <button class="btn rounded-full">
                                         <div class="text-xl"><i class="fa-solid fa-arrow-right "></i>
                                         </div>
@@ -242,7 +242,7 @@
             </div>
         </section>
         <!-- =========== latest portfolio part star ==========-->
-        <section class="container mx-auto pt-28">
+        <section class="container mx-auto pt-28 pb-24">
             <div>
                 <div class="text-center space-y-6 mb-8">
                     <button class="btn rounded-full bg-bg-color">
@@ -298,7 +298,7 @@
 
         </section>
         <!-- ============ input part start ============= -->
-        <section class="bg-bannerBg">
+        <section class="bg-bannerBg bg-no-repeat bg-cover border-[7px] border-white">
             <div class="container mx-auto">
                 <div class="text-center space-y-6 pt-24 lg:w-[970px] mx-auto pb-32">
                     <button class="btn bg-view_btn rounded-full hover:bg-orange-600 text-xl font-bold ">
@@ -365,7 +365,7 @@
                     weathered wood, sleek metal accents.
                 </p>
             </div>
-            <nav class="grid grid-cols-4 gap-4">
+            <nav class="grid lg:grid-cols-4 grid-cols-1 lg:gap-32 ">
                 <a class="hover:text-orange-400 font-semibold text-xl text-input">About us</a>
                 <a class="hover:text-orange-400 font-semibold text-xl text-input">Contact</a>
                 <a class="hover:text-orange-400 font-semibold text-xl text-input">Jobs</a>
